@@ -9,12 +9,12 @@ class Board
 	end
 
 	def score(number, multiplier)
-		if multiplier == "single"
-			number
+		if multiplier == "treble"
+			number * 3
 		elsif multiplier == "double"
 			number * 2
 		else
-			number * 3
+			number
 		end
 	end
 end
