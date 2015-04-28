@@ -1,8 +1,12 @@
 class Game
 
-	attr_reader :type
+	attr_reader :score
 
-	def initialize
-		@type = 501
+	def initialize(number)
+		@score = number
+	end
+
+	def minus_player_throws(points)
+		@score = @score - points
 	end
 end
